@@ -32,7 +32,7 @@
           var monthIndex = dob.getMonth() + 1;
           var year = dob.getFullYear();
 
-          var dobStr = monthIndex + '/' + day + '/' + year;
+          var dobStr = day + '/' + monthIndex + '/' + year;
           var fname = '';
           var lname = '';
 

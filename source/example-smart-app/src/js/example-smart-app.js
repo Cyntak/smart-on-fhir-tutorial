@@ -29,10 +29,12 @@
           var gender = patient.gender;
           var dob = new Date(patient.birthDate);
           var day = dob.getDate();
-          var monthIndex = dob.getMonth() + 1;
+          var monthIndex = dob.getMonth();
           var year = dob.getFullYear();
+          
+          var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-          var dobStr = day + '/' + monthIndex + '/' + year;
+          var dobStr = day + '/' + monthNames[monthIndex] + '/' + year;
           var fname = '';
           var lname = '';
 
